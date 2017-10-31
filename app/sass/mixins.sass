@@ -1,0 +1,33 @@
+=maw($width)
+  @media (max-width: $width)
+    @content
+
+=miw($width)
+  @media (min-width: $width)
+    @content
+
+=r
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx)
+    @content
+
+=ie
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+    @content
+
+=center
+  margin: 0 auto
+  max-width: $content-width
+  padding-left: $content-padding
+  padding-right: $content-padding
+
+=title
+  margin-top: 125px
+  margin-bottom: 50px
+  text-align: center
+  font-size: 30px
+  line-height: 36px
+  font-weight: 500
+  color: #454546
+
+@function perc($width)
+  @return $width / ($content-width - $content-padding * 2) * 100%

@@ -1,0 +1,36 @@
+.hero
+  display: flex
+
+  &__container
+    +center
+    min-height: 680px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+  &__title
+    margin: 25px auto
+    max-width: 950px
+    text-align: center
+    font-family: $exo
+    font-weight: 500
+    color: #fffcf4
+
+  &__bold-text
+    font-weight: 900
+    color: $main-color
+
+  &__desc
+    margin: 16px auto
+    max-width: 950px
+    text-align: center
+    font-size: 18px
+    line-height: 36px
+    font-weight: 300
+    color: #fff
+
++maw(500px)
+  .hero
+    &__container
+      min-height: 500px

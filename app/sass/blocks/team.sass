@@ -1,0 +1,91 @@
+.team
+
+  &__container
+    +center
+
+  &__title
+    +title
+    margin-top: 70px
+
+  &__items
+    margin-left: -15px
+    margin-right: -15px
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+
+  &__item
+    margin-left: 15px
+    margin-right: 15px
+    margin-bottom: 30px
+    position: relative
+    height: 355px
+    width: 269px
+    overflow: hidden
+    transition: transform .3s ease
+
+  &__item-img
+
+  &__item-who
+    position: absolute
+    bottom: 0
+    min-height: 70px
+    width: 100%
+
+    padding-top: 10px
+    padding-bottom: 10px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    background-color: #454546
+    opacity: 0.94
+    text-align: center
+    transition: .3s ease
+
+  &__item-name
+    font-size: 18px
+    font-weight: 400
+    color: #fffcf4
+
+  &__item-job
+    margin-top: 5px
+    font-size: 14px
+    color: #fffcf4
+
+
+  &__item:hover
+    transform: scale(1.1)
+
+    & .team__item-who
+      min-height: 100%
+      max-height: 100%
+      background-color: $main-color
+      opacity: 0.9
+
+    & .team__item-social-links
+      transform: translate(0)
+
+
+  &__item-social-links
+    transform: translate(-100%)
+    position: absolute
+    bottom: 30px
+    width: 100%
+    padding: 0 30px
+    border-top: 1px solid rgba(255, 255, 255, .5)
+    border-bottom: 1px solid rgba(255, 255, 255, .5)
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    transition: transform .3s ease
+
+
+  &__item-social-link
+    margin: 0 5px
+    padding: 0 4px
+    font-size: 0
+
+
+  &__item-social-link svg
+    height: 36px
+    fill: #fff

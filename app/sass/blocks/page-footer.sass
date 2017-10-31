@@ -1,0 +1,127 @@
+.page-footer
+  background-color: #0b0a0a
+  font-size: 14px
+  line-height: 36px
+  font-weight: 300
+
+  &__container
+    +center
+    padding-bottom: 10px
+
+  &__inner
+    display: flex
+    flex-wrap: wrap
+
+  &__about
+    max-width: 325px
+    margin-left: 30px
+
+  &__header
+    margin-top: 28px
+    margin-bottom: 0
+    font-size: 18px
+    font-weight: 500
+    color: #fff
+
+  &__text
+    margin-top: 0
+
+  &__quick-links
+    margin-left: 110px
+
+  &__links-list
+    margin: 0
+    padding: 0
+    list-style: none
+
+    &--2-column
+      column-count: 2
+
+  &__links-list-item
+
+    a
+      display: inline-block
+      text-decoration: none
+      color: #8f8e91
+
+      &:hover
+        text-decoration: underline
+
+  &__column-wrapper
+    margin-left: 165px
+
+  &__social
+
+  &__social-links
+    margin: 0
+    padding: 0
+    list-style: none
+
+
+  &__social-links-item
+    display: inline-block
+    margin-top: 10px
+    margin-right: 4px
+
+    a
+      display: inline-block
+      width: 40px
+      height: 40px
+      border: 2px solid #8f8e91
+      text-align: center
+
+    svg
+      height: 30px
+      max-width: 30px
+      line-height: 40px
+      vertical-align: middle
+      fill: #8f8e91
+
+    &:hover
+      a
+        border-color: #fff
+      svg
+        fill: #fff
+
+  &__header--sub
+    margin-top: 8px
+
+
+  &__subscribe
+
+  &__form
+
+  &__form-field
+    margin-top: 6px
+    margin-bottom: 18px
+    width: 250px
+    padding: 13px 10px
+    border: 1px solid #8f8e91
+    font-size: 14px
+    font-weight: 500
+    color: #fff
+    background: transparent
+
+  &__form-submit
+    min-width: 104px
+
+  &__copy
+    margin-top: 90px
+    text-align: center
+
++maw(1100px)
+  .page-footer
+    &__inner
+      justify-content: space-between
+
+    &__quick-links
+      margin-left: 30px
+
+    &__column-wrapper
+      margin-left: 30px
+
+
++maw(500px)
+  .page-footer
+    &__copy
+      margin-top: 40px
